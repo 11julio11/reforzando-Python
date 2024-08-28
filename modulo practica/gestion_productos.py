@@ -1,8 +1,3 @@
-'''
-1. Agregar productos a una lista
-Crea un programa que permita al usuario agregar productos (nombre y precio) a una lista y luego muestre todos los productos agregados.
-'''
-
 productos = []
 
 def agregar_producto():
