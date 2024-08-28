@@ -1,6 +1,7 @@
 # main.py
 from gestion_productos import agregar_producto, listar_productos
 from buscar_producto import buscar_producto
+from manejo_de_precios import mostrar_precios
 
 def menu():
     while True:
@@ -8,7 +9,8 @@ def menu():
         print("1. Agregar un producto")
         print("2. Listar productos")
         print("3. Buscar un producto")
-        print("4. Salir")
+        print("4. Mostrar todos los precios")
+        print("5. Salir")
         
         opcion = input("Selecciona una opción: ")
         
@@ -24,6 +26,9 @@ def menu():
             print(resultado_busqueda)
         
         elif opcion == '4':
+            mostrar_precios()
+        
+        elif opcion == '5':
             print("Saliendo del programa...")
             break
         
